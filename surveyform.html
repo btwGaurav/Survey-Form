@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title >
+		Survey Form 
+	</title>
+
+	<style>
+
+
+		body {
+			background-image:  url("image.jpg");
+			font-family: Verdana;
+			text-align: center;
+			background-position: center;
+            background-size: cover;
+            font-family: sans-serif;
+            margin-top: 40px;
+			color: #fff;
+			position: relative;
+			
+		}
+
+
+		form {
+			background-color: rgba(0,0,0,0.7);
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+			position: relative;
+			border-radius: 50px;
+			
+		}
+
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		
+		}
+
+
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+		#comment
+		{
+			min-height: 180px;
+		}
+		button{
+            background-color: #3BAF9F;
+            display: block;
+            margin: 20px 0px 0px 20px;
+            text-align: center;
+            border-radius: 12px;
+            border: 2px solid #366473;
+            padding: 14px 110px;
+            outline: none;
+            color: white;
+            cursor: pointer;
+            transition: 0.25px;
+		
+        }
+        button:hover{
+            background-color: #5390F5;
+        }
+	</style>
+</head>
+
+<body>
+	<h1 style="color:black">Survey Form</h1>
+
+	
+	<form id="form">
+
+
+		<div class="form-control">
+			<label for="name" id="label-name">
+				Name
+			</label>
+
+
+			<input type="text"
+				id="name"
+				placeholder="Enter your name" />
+		</div>
+
+		<div class="form-control">
+			<label for="email" id="label-email">
+				Email
+			</label>
+
+
+			<input type="email"
+				id="email"
+				placeholder="Enter your email" />
+		</div>
+
+		<div class="form-control">
+			<label for="age" id="label-age">
+				Age
+			</label>
+
+
+			<input type="text"
+				id="age"
+				placeholder="Enter your age" />
+		</div>
+		<div class="form-control">
+			<label for="age" id="label-mobilenumber">
+				Mobilenumber
+			</label>
+
+
+			<input type="tel"
+				id="mobilenumber"
+				placeholder="Enter your mobile number with country code " />
+			
+		</div>
+
+		<div class="form-control">
+			<label for="role" id="label-role">
+				Which option best describes you?
+			</label>
+			
+
+			<select name="role" id="role">
+				<option value="student">Student</option>
+				<option value="intern">Intern</option>
+				<option value="professional">
+					Professional
+				</option>
+				<option value="other">Other</option>
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label required>
+				Would you recommed 
+				to your friend?
+			</label>
+
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Yes
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">No
+			</label>
+			<label for="recommed-3">
+				<input type="radio"
+					id="recommed-3"
+					name="recommed">Maybe
+			</label>
+		</div>
+
+		<div class="form-control">
+			<label>Languages and Frameworks known
+				<small>(Check all that apply)</small>
+			</label>
+
+			<label for="inp-1">
+				<input type="checkbox"
+					name="inp">C</label>
+			<label for="inp-2">
+				<input type="checkbox"
+					name="inp">C++</label>
+			<label for="inp-3">
+				<input type="checkbox"
+					name="inp">C#</label>
+			<label for="inp-4">
+				<input type="checkbox"
+					name="inp">Java</label>
+			<label for="inp-5">
+				<input type="checkbox"
+					name="inp">Python</label>
+			<label for="inp-6">
+				<input type="checkbox"
+					name="inp">JavaScript</label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">React</label>
+			<label for="inp-7"> 
+                <input type="checkbox" name="inp">Angular</label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Django</label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Spring</label>
+		</div>
+
+		<div class="form-control">
+			<label for="comment" >
+				Any comments or suggestions
+			</label>
+
+
+			<textarea rows="4" cols="50" id="comment"
+			placeholder="Enter your comment here " >
+			</textarea>
+		</div>
+
+		<center>
+		<button type="submit" value="submit">
+			Submit
+		</button>
+	</center>
+	</form>
+</body>
+
+</html>
